@@ -1,0 +1,22 @@
+sensors:
+  motor-07:
+    type: vibration
+    rate: 2000
+    window: 256
+    detector: zscore
+    source: simulator
+    fault_rate: 0.05
+  cold-room-2:
+    type: temperature
+    rate: 1
+    window: 60
+    detector: zscore
+    source: simulator
+    fault_rate: 0.04
+  pump-3:
+    type: pressure
+    rate: 10
+    window: 100
+    detector: zscore
+    source: simulator
+    fault_rate: 0.05
